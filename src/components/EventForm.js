@@ -52,6 +52,7 @@ const EventForm = () => {
   const deleteAllOperationLogs = e => {
     e.preventDefault()
     const result = window.confirm('全ての操作ログを本当に削除しても良いですか？')
+
     if (result) {
       dispatch({
         type: DELETE_ALL_OPERATION_LOGS
